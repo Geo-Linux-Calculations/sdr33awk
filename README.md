@@ -2,6 +2,7 @@
 Small utility scripts to handle sdr33 files
 
 * sdr2csv.awk - convert SDR33 to CSV
+* sdr2gkf.awk - convert SDR33 to GKF (GNU Gama 3D)
 
 ## How to use these scripts?
 
@@ -16,6 +17,11 @@ The results are written:
 * sample.sdr.svb.csv - angular measure file
 * sample.sdr.xyh0.csv - file with stations
 * sample.sdr.xyh.csv - file with coordinates of points
+```
+gawk -f sdr2gkf.awk sample.sdr
+```
+The results are written:
+* sample.sdr.gkf - file for GNU Gama (no complete)
 
 ## For Windows users
 
